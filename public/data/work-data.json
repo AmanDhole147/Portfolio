@@ -1,0 +1,34 @@
+{
+  "workData": [
+    {
+      "image": "/images/work/work-img-1.png",
+      "title": "Iplix Media",
+      "client": "Neel Ghogia",
+      "slug": "https://iplix.in/"
+    },
+    {
+      "image": "/images/work/work-img-2.png",
+      "title": "jag Chima Site",
+      "client": "Jag Chima",
+      "slug": "https://www.jagchima.com/"
+    },
+    {
+      "image": "/images/work/work-img-3.png",
+      "title": "Daffodils Creations",
+      "client": "Rushina Mehrotra",
+      "slug": "https://daffodilscreations.com/"
+    },
+    {
+      "image": "/images/work/work-img-4.png",
+      "title": "Katha",
+      "client": "Maria Shakir",
+      "slug": "https://kathabymariashakir.com/"
+    },
+    {
+      "image": "/images/work/work-img-5.png",
+      "title": "Biohacking Directory",
+      "client": "Jag Chima",
+      "slug": "https://biohackingdirectory.com/"
+    }
+  ]
+}

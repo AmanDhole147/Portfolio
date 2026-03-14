@@ -1,0 +1,111 @@
+{
+  "contactBar": {
+    "contactItems": [
+      {
+        "type": "email",
+        "label": "vickeydhole@gmail.com",
+        "icon": "/images/icon/mail-icon.svg",
+        "link": "mailto:vickeydhole@gmail.com"
+      },
+      {
+        "type": "phone",
+        "label": "+91 777 580 5334",
+        "icon": "/images/icon/call-icon.svg",
+        "link": "tel:+917775805334"
+      }
+    ],
+    "socialItems": [
+      {
+        "platform": "linkedin",
+        "icon": "/images/icon/linkedin-icon.svg",
+        "link": "https://linkedin.com/in/amandhole"
+      },
+      {
+        "platform": "Github",
+        "icon": "/images/icon/github-icon.svg",
+        "link": "https://github.com/AmanDhole147"
+      },
+      {
+        "platform": "Instagram",
+        "icon": "/images/icon/instagram-icon.svg",
+        "link": "https://instagram.com/dhole_vickey"
+      }
+    ]
+  },
+  "educationData": {
+    "education": [
+      {
+        "title": "Govindrao Wanjari College of Engineering & Technology - 2025",
+        "description": "Completed Bachelor of Technology in Information Technology turning theory into deployable code focus and learned Web Development, AI Systems, and Software Engineering principles."
+      },
+      {
+        "title": "D.R.B. Sindhu Mahavidyalaya - 2021",
+        "description": "Completed science stream with solid focus on mathematics and physics"
+      },
+      {
+        "title": "Dharmaraj Vidyalaya - 2019",
+        "description": "Completed Secondary School education with strong academic foundation."
+      }
+    ],
+    "skills": [
+      {
+        "name": "WordPress",
+        "icon": "/images/home/education-skill/wordpress-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "Shopify",
+        "icon": "/images/home/education-skill/shopify-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "/images/home/education-skill/bootstrap-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "Tailwind",
+        "icon": "/images/home/education-skill/tailwind-icon.svg",
+        "rating": 5
+      },
+      {
+        "name": "Canva",
+        "icon": "/images/home/education-skill/canva-icon.svg",
+        "rating": 4
+      },
+      {
+        "name": "Framer",
+        "icon": "/images/home/education-skill/framer-icon.svg",
+        "rating": 3
+      }
+    ]
+  },
+  "contactLinks": {
+    "socialLinks": [
+      {
+        "title": "LinkedIn",
+        "href": "https://linkedin.com/in/amandhole"
+      },
+      {
+        "title": "GitHub",
+        "href": "https://github.com/AmanDhole147"
+      },
+      {
+        "title": "Instagram",
+        "href": "https://instagram.com/dhole_vickey"
+      }
+    ],
+    "contactInfo": [
+      {
+        "type": "email",
+        "label": "vickeydhole@gmail.com",
+        "link": "mailto:vickeydhole@gmail.com"
+      },
+      {
+        "type": "phone",
+        "label": "+91 777 580 5334",
+        "link": "tel:+917775805334"
+      }
+    ]
+  }
+}
