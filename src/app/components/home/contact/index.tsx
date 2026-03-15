@@ -29,12 +29,14 @@ const Contact = () => {
     fetchData();
   }, []);
 
-  const reset = () => {
-    formData.name = "";
-    formData.number = "";
-    formData.email = "";
-    formData.message = "";
-  };
+const reset = () => {
+  setFormData({
+    name: "",
+    number: "",
+    email: "",
+    message: "",
+  });
+};
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
