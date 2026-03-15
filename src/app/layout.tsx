@@ -18,28 +18,34 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={bricolageGrotesque.className}>
         <Header />
-
         {children}
-
         <Footer />
 
-        {/* Fix image paths for GitHub Pages */}
         <Script id="fix-gh-pages-images" strategy="afterInteractive">
           {`
             if (location.hostname.includes('github.io')) {
               const prefix = '/Portfolio';
-              document.querySelectorAll('img[src^="/"]').forEach(img => {
-                if (!img.src.includes(prefix)) {
-                  img.src = prefix + img.getAttribute('src');
-                }
-              });
+
+              function fixImages() {
+                document.querySelectorAll('img').forEach(img => {
+                  const src = img.getAttribute('src');
+                  if (src && src.startsWith('/') && !src.startsWith(prefix)) {
+                    img.src = prefix + src;
+                  }
+                });
+              }
+
+              fixImages();
+
+              const observer = new MutationObserver(() => fixImages());
+              observer.observe(document.body, { childList: true, subtree: true });
             }
           `}
         </Script>
