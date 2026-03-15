@@ -38,19 +38,29 @@ const reset = () => {
   });
 };
 
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
+const handleSubmit = async (e: any) => {
+  e.preventDefault();
 
-    fetch("https://formsubmit.co/ajax/56208e6bca9bc38fbf472fd08f08f01b", {
-      method: "POST",
-      headers: { "Content-type": "application/json" },
-      body: JSON.stringify({
-        name: formData.name,
-        number: formData.number,
-        email: formData.email,
-        message: formData.message,
-      }),
-    })
+  try {
+    const response = await fetch(
+      "https://formsubmit.co/ajax/56208e6bca9bc38fbf472fd08f08f01b",
+      {
+        method: "POST",
+        headers: { "Content-type": "application/json" },
+        body: JSON.stringify(formData),
+      }
+    );
+
+    const data = await response.json();
+
+    if (data.success) {
+      setSubmitted(true);
+      reset();
+    }
+  } catch (error: any) {
+    console.log(error.message);
+  }
+};
       .then((response) => response.json())
       .then((data) => {
         setSubmitted(data.success);
