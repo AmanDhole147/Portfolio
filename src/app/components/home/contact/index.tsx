@@ -29,38 +29,26 @@ const Contact = () => {
     fetchData();
   }, []);
 
-const reset = () => {
-  setFormData({
-    name: "",
-    number: "",
-    email: "",
-    message: "",
-  });
-};
+  const reset = () => {
+    formData.name = "";
+    formData.number = "";
+    formData.email = "";
+    formData.message = "";
+  };
 
-const handleSubmit = async (e: any) => {
-  e.preventDefault();
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
 
-  try {
-    const response = await fetch(
-      "https://formsubmit.co/ajax/56208e6bca9bc38fbf472fd08f08f01b",
-      {
-        method: "POST",
-        headers: { "Content-type": "application/json" },
-        body: JSON.stringify(formData),
-      }
-    );
-
-    const data = await response.json();
-
-    if (data.success) {
-      setSubmitted(true);
-      reset();
-    }
-  } catch (error: any) {
-    console.log(error.message);
-  }
-};
+    fetch("https://formsubmit.co/ajax/vickeydhole@gmail.com", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify({
+        name: formData.name,
+        number: formData.number,
+        email: formData.email,
+        message: formData.message,
+      }),
+    })
       .then((response) => response.json())
       .then((data) => {
         setSubmitted(data.success);
@@ -177,8 +165,9 @@ const handleSubmit = async (e: any) => {
                     <div key={index}>
                       <Link
                         className="text-base sm:text-lg font-normal text-secondary hover:text-primary"
-                        onClick={(e) => e.preventDefault()}
-                        href={"#!"}
+                        href={value?.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         {value?.title}
                       </Link>
@@ -191,9 +180,10 @@ const handleSubmit = async (e: any) => {
                   return (
                     <div key={index}>
                       <Link
-                        onClick={(e) => e.preventDefault()}
-                        href={"#!"}
                         className="text-base lg:text-lg text-black font-normal border-b border-black pb-3 hover:text-primary hover:border-primary"
+                        href={value?.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         {value?.label}
                       </Link>
