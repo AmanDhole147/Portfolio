@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 
   // ✅ Open Graph (FIXED URL)
   openGraph: {
-    title: "Aman Dhole – Web Developer",
+    title: "Aman Dhole | Portfolio",
     description:
       "Frontend Developer specializing in React, WordPress & Shopify.",
     url: "https://amandhole147.github.io/Portfolio",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   // ✅ Twitter
   twitter: {
     card: "summary_large_image",
-    title: "Aman Dhole – Web Developer",
+    title: "Aman Dhole | Portfolio",
     description:
       "Frontend Developer specializing in React, WordPress & Shopify.",
   },
