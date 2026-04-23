@@ -15,6 +15,23 @@ export const metadata: Metadata = {
   description:
     "Frontend Developer specializing in React, WordPress & Shopify. I build fast, responsive, SEO-optimized websites that convert visitors into customers.",
 
+metadataBase: new URL("https://amandhole147.github.io/Portfolio/"), // replace with your domain
+  alternates: {
+    canonical: "/",
+  },
+
+  // ✅ Keywords (optional but fine to include)
+  keywords: [
+    "Aman Dhole",
+    "Frontend Developer",
+    "React Developer",
+    "WordPress Developer",
+    "Shopify Developer",
+    "Web Developer Portfolio",
+    "SEO Optimized Websites",
+    "Freelance Web Developer",
+  ],
+  
   // ✅ IMPORTANT: Allow indexing
   robots: {
     index: true,
@@ -26,7 +43,7 @@ export const metadata: Metadata = {
   },
 
   // ✅ Recommended additions
-  metadataBase: new URL("https://yourdomain.com"), // replace with your domain
+  metadataBase: new URL("https://amandhole147.github.io/Portfolio/"), // replace with your domain
 
   openGraph: {
     title: "Aman Dhole – Web Developer",
