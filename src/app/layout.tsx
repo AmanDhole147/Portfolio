@@ -11,7 +11,7 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "Aman Dhole – Web Developer",
+  title: "Aman Dhole | Portfolio",
   description:
     "Frontend Developer specializing in React, WordPress & Shopify. I build fast, responsive, SEO-optimized websites that convert visitors into customers.",
 
