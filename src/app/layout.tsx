@@ -14,6 +14,35 @@ export const metadata: Metadata = {
   title: "Aman Dhole – Web Developer",
   description:
     "Frontend Developer specializing in React, WordPress & Shopify. I build fast, responsive, SEO-optimized websites that convert visitors into customers.",
+
+  // ✅ IMPORTANT: Allow indexing
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+
+  // ✅ Recommended additions
+  metadataBase: new URL("https://yourdomain.com"), // replace with your domain
+
+  openGraph: {
+    title: "Aman Dhole – Web Developer",
+    description:
+      "Frontend Developer specializing in React, WordPress & Shopify.",
+    url: "https://yourdomain.com",
+    siteName: "Aman Dhole Portfolio",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Aman Dhole – Web Developer",
+    description:
+      "Frontend Developer specializing in React, WordPress & Shopify.",
+  },
 };
 
 export default function RootLayout({
