@@ -15,12 +15,15 @@ export const metadata: Metadata = {
   description:
     "Frontend Developer specializing in React, WordPress & Shopify. I build fast, responsive, SEO-optimized websites that convert visitors into customers.",
 
-metadataBase: new URL("https://amandhole147.github.io/Portfolio/"), // replace with your domain
+  // ✅ Only ONE metadataBase (no trailing slash)
+  metadataBase: new URL("https://amandhole147.github.io/Portfolio"),
+
+  // ✅ Canonical
   alternates: {
     canonical: "/",
   },
 
-  // ✅ Keywords (optional but fine to include)
+  // ✅ Keywords
   keywords: [
     "Aman Dhole",
     "Frontend Developer",
@@ -31,8 +34,8 @@ metadataBase: new URL("https://amandhole147.github.io/Portfolio/"), // replace w
     "SEO Optimized Websites",
     "Freelance Web Developer",
   ],
-  
-  // ✅ IMPORTANT: Allow indexing
+
+  // ✅ Indexing
   robots: {
     index: true,
     follow: true,
@@ -42,18 +45,17 @@ metadataBase: new URL("https://amandhole147.github.io/Portfolio/"), // replace w
     },
   },
 
-  // ✅ Recommended additions
-  metadataBase: new URL("https://amandhole147.github.io/Portfolio/"), // replace with your domain
-
+  // ✅ Open Graph (FIXED URL)
   openGraph: {
     title: "Aman Dhole – Web Developer",
     description:
       "Frontend Developer specializing in React, WordPress & Shopify.",
-    url: "https://yourdomain.com",
+    url: "https://amandhole147.github.io/Portfolio",
     siteName: "Aman Dhole Portfolio",
     type: "website",
   },
 
+  // ✅ Twitter
   twitter: {
     card: "summary_large_image",
     title: "Aman Dhole – Web Developer",
